@@ -1,6 +1,6 @@
 print("Welcome to Student Database of Your School")
 Admin = input("Please Type your Username:")
-Password = input("Please type your user")
+Password = input("Please type your Password:")
 
 print("***** Welcome", Admin, "to Student Result Upload system*****")
 Exam = input("Please type Exam Name and Year")
@@ -22,6 +22,7 @@ print(English)
 print(Biology)
 print(Chemistry)
 
+
 TotalMarks = Hindi + English + Physics + Chemistry + Biology
 
 print(TotalMarks,"/500")
@@ -34,3 +35,6 @@ if overAll >= 40:
         print(StudentID, "have failed the", Exam)
 else:
     print(StudentID, "have failed the", Exam)
+
+percentage = TotalMarks / 500 *100
+print("The result is", percentage, "%")
